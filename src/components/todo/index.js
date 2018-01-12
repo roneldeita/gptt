@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 import TodoList from '../../components/todo/TodoList'
+import TodoDisplay from '../../components/todo/TodoDisplay'
 
-class Todo extends Component {
+class Index extends Component {
   render() {
-    console.log(this.props)
     return (
       <div className="Todo">
         <TodoList />
+        <TodoDisplay />
       </div>
     );
   }
 }
 
-export default Todo;
+export default Index;

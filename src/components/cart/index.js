@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import CartComponent from './Cart';
+import Cart from './Cart';
 
 class Index extends Component {
   render() {
     return (
       <div className="Cart">
-        <CartComponent />
+        <Cart />
       </div>
     );
   }
