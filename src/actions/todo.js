@@ -23,7 +23,6 @@ export const toggleTodo = (id) => {
 
 export const todoDisplay = (filter) => {
   return {
-    type:'SET_VISIBILITY_FILTER',
-    filter
+    type: filter
   }
 }

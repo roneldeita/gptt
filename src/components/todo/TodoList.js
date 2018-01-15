@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import * as TodoActions from '../../actions/todo';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import * as TodoActions from '../../actions/todo'
 
 class TodoList extends Component {
   constructor(props){

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import * as TodoActions  from '../../actions/todo';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import * as TodoActions  from '../../actions/todo'
 
 class TodoDisplay extends Component {
   constructor(props){
@@ -14,6 +14,7 @@ class TodoDisplay extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div>
         <ul>
@@ -26,10 +27,10 @@ class TodoDisplay extends Component {
   }
 }
 
-
 function mapStateToProps(state, prop) {
   return {
-    TodoDisplay: state.todoFilter
+    TodoDisplay: state.todoFilter,
+    todo: state.todo
   }
 }
 

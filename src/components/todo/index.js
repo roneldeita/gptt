@@ -1,13 +1,22 @@
 import React, { Component } from 'react'
-import TodoList from '../../components/todo/TodoList'
-import TodoDisplay from '../../components/todo/TodoDisplay'
+import TodoBoard from '../../components/todo/TodoBoard'
+// import TodoList from '../../components/todo/TodoList'
+// import TodoDisplay from '../../components/todo/TodoDisplay'
 
 class Index extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      todos:[
+        {id:0, title: 'Email Christopher Villanueva', done: true},
+        {id:1, title: 'Feed puppy', done: false }
+      ]
+    }
+  }
   render() {
     return (
       <div className="Todo">
-        <TodoList />
-        <TodoDisplay />
+         <TodoBoard todos={this.state.todos} />
       </div>
     );
   }
