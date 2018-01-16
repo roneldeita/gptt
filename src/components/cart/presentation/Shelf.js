@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { addToCart } from '../../../actions/cart';
+import { connect } from 'react-redux';
 
 class Shelf extends Component {
   constructor(props){
@@ -15,26 +17,12 @@ class Shelf extends Component {
     }
   }
 
-  // renderItems(){
-  //   var items = [];
-  //   this.state.shelfItems.map((item, id) => {
-  //     items.push(<li key={id}>{item}<button>[+]</button></li>)
-  //   })
-  //
-  //   return (
-  //     <div>
-  //       {items}
-  //     </div>
-  //   )
-  //
-  // }
-
   onClickAdd(item){
-    this.props.addItem(item)
+    this.props.dispatch(addToCart(item))
   }
 
   render() {
-    // console.log(this.props)
+    console.log(this.props)
     const shelfItems = this.state.shelfItems.map((item, id) => {
       return <li key={id}>{item}<button onClick={() => this.onClickAdd(item)}>Add</button></li>
     });
@@ -46,4 +34,4 @@ class Shelf extends Component {
   }
 }
 
-export default Shelf;
+export default connect()(Shelf);

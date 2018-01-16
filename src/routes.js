@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import App from './App'
 import NotFound from './components/notFound'
 import Cart from './components/cart'
-import Todo from './components/todo/'
 
 const Routes = ({ store }) => (
   <Provider store={store}>
@@ -13,7 +12,6 @@ const Routes = ({ store }) => (
       <div>
         <Switch>
           <Route exact path="/" component={App} />
-          <Route path="/todo" component={Todo} />
           <Route path="/cart" component={Cart} />
           <Route path="*" component={NotFound} />
         </Switch>

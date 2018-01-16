@@ -12,11 +12,11 @@ ReactDOM.render(
 )
 
 // subscribe to store
-StoreInstance.subscribe(() =>
-  console.log(StoreInstance.getState())
-)
+// StoreInstance.subscribe(() =>
+//   console.log(StoreInstance.getState())
+// )
 
 // dispatch sample to store
-StoreInstance.dispatch({type:'ADD_TO_CART', item:'testing'})
+// StoreInstance.dispatch({type:'ADD_TO_CART', item:'testing'})
 
 registerServiceWorker()

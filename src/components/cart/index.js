@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import Cart from './Cart';
+import Items from './container/Items';
+import Shelf from './presentation/Shelf'
 
 class Index extends Component {
   render() {
     return (
       <div className="Cart">
-        <Cart />
+        <Shelf />
+        <Items />
       </div>
     );
   }
