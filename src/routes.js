@@ -4,18 +4,17 @@ import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import App from './App'
 import NotFound from './components/notFound'
-import Cart from './components/cart'
+import HomePage from './components/home/HomePage'
 
 const Routes = ({ store }) => (
   <Provider store={store}>
     <Router>
-      <div>
+      <App>
         <Switch>
-          <Route exact path="/" component={App} />
-          <Route path="/cart" component={Cart} />
+          <Route path="/" exact component={HomePage} />
           <Route path="*" component={NotFound} />
         </Switch>
-      </div>
+      </App>
     </Router>
   </Provider>
 )
