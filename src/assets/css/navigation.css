@@ -1,0 +1,12 @@
+.menu-container{
+  background-color: #ffffff;
+  line-height: 60px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.ant-menu-horizontal{
+  border: 0px !important;
+  line-height: 60px !important;
+}
+.logo{
+  width: 135px;
+}

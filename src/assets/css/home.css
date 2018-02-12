@@ -1,0 +1,27 @@
+.ant-carousel .slick-slide {
+  padding: 0px !important;
+  height: 350px !important;
+  border: 0px !important
+}
+.ant-carousel .carousel-item {
+  background-size: cover;
+  background-position:right;
+  background-repeat: no-repeat;
+}
+.ant-carousel .carousel-item .slogan{
+  margin-top: 150px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+  line-height: 50px;
+}
+.card{
+  width: 100%;
+  margin-top: -50px;
+}
+.card .fa{
+  font-size: 45px;
+  padding: 40px 10px;
+  color: #3f3f3f;
+}

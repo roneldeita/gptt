@@ -1,0 +1,7 @@
+@import '~antd/dist/antd.css';
+.border{
+  border: 1px solid #999999;
+}
+.txt-dark-grey{
+  color:#3f3f3f
+}
