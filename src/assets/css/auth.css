@@ -1,0 +1,34 @@
+.auth-form{
+  font-size: 21px;
+  font-weight: 500
+}
+.google-login,
+.facebook-login,
+.unified-login{
+  width:100%
+}
+.google-login{
+  margin-bottom: 25px;
+  color: #444;
+  border: thin solid #888888;
+}
+.facebook-login{
+}
+.unified-login{
+  background-color: #FCA600;
+  color: #000000;
+  border: thin solid #d9d9d9;
+}
+.facebook-login,
+.facebook-login:hover{
+  background-color: #3B5998;
+  color: #ffffff;
+}
+.facebook-login:hover{
+  border: 1px solid #8b9dc3
+}
+.unified-login:hover{
+  background-color: #FCA600;
+  color: #000000;
+  border-color: #000000
+}

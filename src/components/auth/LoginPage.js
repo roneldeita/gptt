@@ -1,4 +1,6 @@
 import React from 'react'
+import '../../assets/css/auth.css'
+import NProgress from 'nprogress'
 import LoginForm from './presentation/LoginForm'
 import { createForm } from 'rc-form';
 
@@ -16,6 +18,13 @@ class LoginPage extends React.Component {
     this.onClickLoginButton = this.onClickLoginButton.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleGoogleLogin = this.handleGoogleLogin.bind(this)
+    this.handleFacebookLogin = this.handleFacebookLogin.bind(this)
+  }
+  componentWillMount() {
+    NProgress.start()
+  }
+  componentDidMount(){
+    NProgress.done()
   }
   onClickLoginButton(event){
     this.setState({loginState:true})
@@ -26,13 +35,16 @@ class LoginPage extends React.Component {
     form[field] = event.target.value;
     return this.setState({loginForm:form})
   }
+  handleFacebookLogin(facebookUser){
+    console.log(facebookUser)
+  }
   handleGoogleLogin(googleUser){
     console.log(googleUser)
-    var id_token = googleUser.getAuthResponse().id_token;
-    var googleId = googleUser.getId();
+    // var id_token = googleUser.getAuthResponse().id_token;
+    // var googleId = googleUser.getId();
 
-    console.log({ googleId });
-    console.log({accessToken: id_token});
+    // console.log({ googleId });
+    // console.log({accessToken: id_token});
     //anything else you want to do(save to localStorage)...
   }
   handleSubmit(event){
@@ -59,7 +71,8 @@ class LoginPage extends React.Component {
           loginState={this.state.loginState}
           onClick={this.onClickLoginButton}
           onSubmit={this.handleSubmit}
-          onGoogleLogin={this.handleGoogleLogin}/>
+          onGoogleLogin={this.handleGoogleLogin}
+          onFacebookLogin={this.handleFacebookLogin}/>
       </div>
     )
   }

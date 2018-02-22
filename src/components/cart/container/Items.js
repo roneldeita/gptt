@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import Cart from '../presentation/Cart'
 
-const  mapStateToProps = state => {
+const mapStateToProps = state => {
   return {
     cart: state.cart
   }

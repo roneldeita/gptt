@@ -5,7 +5,7 @@
 }
 .ant-carousel .carousel-item {
   background-size: cover;
-  background-position:right;
+  background-position:bottom;
   background-repeat: no-repeat;
 }
 .ant-carousel .carousel-item .slogan{
@@ -15,6 +15,9 @@
   color: #ffffff;
   text-align: left;
   line-height: 50px;
+}
+.ant-card{
+  height: 100%;
 }
 .card{
   width: 100%;
