@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import { Row, Col ,Button } from 'antd'
+import { Row, Col  } from 'antd'
 import '../../assets/css/navigation.css'
 // import Logo from '../../assets/images/globalpinoytravel.png'
 
