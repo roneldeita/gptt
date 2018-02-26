@@ -8,7 +8,7 @@ const SubMenu = Menu.SubMenu
 const TopNavigation = ({ location }) => {
   const activeAuth = location.pathname !== '/login' && location.pathname !== '/register' ? [] : ['/login', 'register']
   return(
-    <Affix>
+    <Affix style={{width:"100%"}}>
       <div className="menu-container">
         <Row className="" type="flex" justify="center">
           <Col className="" xs={24} sm={7} md={5}>
